@@ -1,0 +1,27 @@
+#customer {
+  padding: 1em;
+  display: grid;
+  justify-content: flex-start;
+  grid-template-areas: "image name"
+                       "image date";
+  margin-bottom: 1em;
+
+  .avatar {
+    grid-area: image;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    margin-right: 1em;
+    border: 1.5px solid var(--gradient-base);
+  }
+  h2 {
+    grid-area: name;
+    font: var(--title-sm);
+    color: var(--gray-600);
+  }
+  p {
+    grid-area: date;
+    font: var(--text-xs);
+    color: var(--gray-500);
+  }
+}
