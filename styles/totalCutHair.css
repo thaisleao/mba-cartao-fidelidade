@@ -1,0 +1,66 @@
+#totalCutHair {
+  grid-area: totalCutHair;
+  padding: 1.6em 2em;
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+
+  h2 {
+    font: var(--text-md);
+    color: var(--gray-500);
+
+    span {
+      font: var(--title-md);
+      color: var(--gray-600);
+    }
+  }
+  #progressBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .75em;
+    margin-top: .75em;
+
+    > div {
+      position: relative;
+
+      div:first-child {
+        background-image: var(--gradient-base);
+        width: 100px;
+        height: 8px;
+        border-radius: 99px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+
+      div:last-child {
+        width: 200px;
+        height: 8px;
+        background-color: var(--gray-300);
+        border-radius: 99px;
+        display: block;
+      }
+    }
+    p {
+      font: var(--text-xs);
+      color: var(--gray-500);
+    }
+  }
+  #gift {
+    width: 72px;
+    height: 72px;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-top: .5em;
+      height: 64px;
+    }
+  }
+}
