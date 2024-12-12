@@ -1,4 +1,5 @@
 #customer {
+  grid-area: customer;
   padding: 1em;
   display: grid;
   justify-content: flex-start;

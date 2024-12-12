@@ -33,6 +33,7 @@ body {
   font: var(--text-md);
   color: var(--gray-500);
   background-color: var(--gray-200);
+  padding: 0 1em;
 }
 
 a {
@@ -47,4 +48,16 @@ a {
   background-color: var(--gray-100);
   border: 1px solid var(--gray-300);
   border-radius: 16px;
+}
+.header h2 {
+  font: var(--subtitle-sm);
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+main {
+  display: grid;
+  gap: 1.5em;
+  grid-template-areas: "customer card"
+                        "history card"
+                        "history totalCutHair";
 }

@@ -24,11 +24,11 @@
       </div>
     </header>
     <main class="grid">
-      <div id="customer" class="box">
+      <section id="customer" class="box">
         <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
         <h2>Nathália Miranda</h2>
         <p>Cliente desde 18/09/2023</p>
-      </div>
+      </section>
       <section id="history" class="box">
         <div class="header">
           <h2>Histórico</h2>
@@ -36,12 +36,36 @@
         </div>
         <div class="content">
           <div class="item">
-            <div class="date">18/09/2023</div>
-            <div class="description">Corte de cabelo</div>
-            <div class="icon">check</div>
+            <div>
+              <p>18/09/2023</p>
+              <span>18:30</span>
+            </div>
+            <i class="ph ph-seal-check icon"></i>
           </div>
+          <div class="item">
+            <div>
+              <p>18/09/2023</p>
+              <span>18:30</span>
+            </div>
+            <i class="ph ph-seal-check icon"></i>
+          </div>
+          <div class="item">
+            <div>
+              <p>18/09/2023</p>
+              <span>18:30</span>
+            </div>
+            <i class="ph ph-seal-check icon"></i>
+          </div>
+          <div class="item">
+            <div>
+              <p>18/09/2023</p>
+              <span>18:30</span>
+            </div>
+            <i class="ph ph-seal-check icon"></i>
+          </div>
+        </div>
       </section>
-      <section id="card" class="box">
+      <section id="card" class="box" style="grid-area: card">
         <div class="header">
           <h2>Cartão fidelidade</h2>
           <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
@@ -49,11 +73,11 @@
         </div>
         <div class="content">
           <div class="item">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
+            <img src="./assets/PinCheck.png" alt="Avatar" class="avatar" />
           </div>
         </div>
       </section>
-      <section id="totalCutHair" class="box">
+      <section id="totalCutHair" class="box" style="grid-area: totalCutHair">
         <h2><span>3</span> cortes restantes</h2>
         <div id="progressBar"></div>
         <p>7 de 10</p>
