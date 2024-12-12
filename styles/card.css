@@ -1,0 +1,51 @@
+#card {
+  grid-area: card;
+  padding: 2em;
+  max-width: 570px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;;
+
+    p {
+      font: var(--text-sm);
+      color: var(--gray-500);
+    }
+    span {
+      font: var(--subtitle-md);
+      color: var(--gray-500);
+      background-color: var(--gray-300);
+      border-radius: 99px;
+      padding: .37em .75em;
+      height: 32px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1em;
+
+    .item {
+      background-color: var(--gray-200);
+      border-radius: 20px;
+      width: 88px;
+      height: 88px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pinCheck {
+        width: 64px;
+        height: 64px;
+      }
+      .icon {
+        font-size: 40px;
+        color: var(--gray-500);
+        opacity: 35%;
+      }
+    }
+  }
+}
