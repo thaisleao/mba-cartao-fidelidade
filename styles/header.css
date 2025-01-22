@@ -1,6 +1,11 @@
 header {
   justify-content: center;
   margin-block: 4em;
+
+  @media (max-width: 768px) {
+    margin-top: 2em;
+    margin-bottom: 1.25em;
+  }
 }
 
 #logo {
@@ -9,12 +14,13 @@ header {
 
 #searchCard {
   display: flex;
-  margin-top: 2em;
+  margin: 2em auto 0;
   padding: .5em;
   background-color: var(--gray-300);
   border: 1px solid var(--gray-400);
   border-radius: 12px;
-  width: 25em;
+  width: 100%;
+  max-width: 25em;
 
   &:has(#input:focus) {
     border-color: var(--pink);

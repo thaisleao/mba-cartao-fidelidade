@@ -3,10 +3,18 @@
   padding: 2em;
   max-width: 570px;
 
+  @media (max-width: 768px) {
+    padding: 1.25em;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;;
+    margin-bottom: 2em;
+
+    > div {
+      width: 50%;
+    }
 
     p {
       font: var(--text-sm);
@@ -20,14 +28,26 @@
       padding: .37em .75em;
       height: 32px;
     }
+
+
+    @media (max-width: 768px) {
+      p {
+        font: var(--text-xs);
+      }
+      span {
+        font: var(--subtitle-sm);
+        padding: .2em .5em;
+        height: 25px;
+      }
+    }
   }
   .content {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     gap: 1em;
-
+    
     .item {
       background-color: var(--gray-200);
       border-radius: 20px;
@@ -45,6 +65,24 @@
         font-size: 40px;
         color: var(--gray-500);
         opacity: 35%;
+      }
+    }
+
+
+    @media (max-width: 768px) {
+      gap: .5em;
+      
+      .item {
+        width: 56px;
+        height: 56px;
+
+        .pinCheck {
+          width: 40px;
+          height: 40px;
+        }
+        .icon {
+          font-size: 24px;
+        }
       }
     }
   }

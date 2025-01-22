@@ -62,7 +62,19 @@ a {
 main {
   display: grid;
   gap: 1.5em;
+  justify-content: center;
   grid-template-areas: "customer card"
                         "history card"
                         "history totalCutHair";
+
+  @media (max-width: 768px) {
+    gap: .5em;
+    grid-template-areas: "customer"
+                         "card"
+                         "totalCutHair"
+                         "history";
+  }
+}
+section {
+  width: 100%;
 }
