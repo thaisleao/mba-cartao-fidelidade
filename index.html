@@ -18,16 +18,21 @@
       <div id="logo">
         <img src="assets/logo.png" alt="Logo Member club" />
       </div>
-      <div id="searchCard">
-        <input type="text" id="input" autofocus placeholder="ID do cartão">
-        <i class="ph ph-arrow-elbow-down-left" id="inputIcon"></i>
+      <div>
+        <form id="searchCard">
+          <input type="text" id="input" autofocus placeholder="ID do cartão">
+          <i class="ph ph-arrow-elbow-down-left" id="inputIcon"></i>
+        </form>
+        <span id="error"></span>
       </div>
     </header>
     <main class="grid">
       <section id="customer" class="box">
-        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar" />
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" id="avatar" class="avatar" />
         <h2 id="client"></h2>
-        <p>Cliente desde <span id="clientSince">18/09/2023</span></p>
+        <p>Cliente desde 
+          <span id="clientSince"></span>
+        </p>
       </section>
       <section id="history" class="box">
         <div class="header">
@@ -35,34 +40,13 @@
           <p id="totalCuts"></p>
         </div>
         <div id="cutsHistory" class="content">
-          <div class="item">
+          <!-- <div class="item">
             <div>
               <p>18/09/2023</p>
               <span>18:30</span>
             </div>
             <i class="ph ph-seal-check icon"></i>
-          </div>
-          <div class="item">
-            <div>
-              <p>18/09/2023</p>
-              <span>18:30</span>
-            </div>
-            <i class="ph ph-seal-check icon"></i>
-          </div>
-          <div class="item">
-            <div>
-              <p>18/09/2023</p>
-              <span>18:30</span>
-            </div>
-            <i class="ph ph-seal-check icon"></i>
-          </div>
-          <div class="item">
-            <div>
-              <p>18/09/2023</p>
-              <span>18:30</span>
-            </div>
-            <i class="ph ph-seal-check icon"></i>
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="card" class="box">
@@ -71,31 +55,10 @@
             <h2>Cartão fidelidade</h2>
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
-          <span id="userId">ID: 124-537-835-230</span>
+          <span id="userId"></span>
         </div>
         <div id="cardsTotalCuts" class="content">
           <!-- <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
-            <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
-          </div>
-          <div class="item">
             <img src="./assets/PinCheck.png" alt="Pin Check" class="pinCheck" />
           </div>
           <div class="item"></div>
@@ -107,14 +70,14 @@
       <section id="totalCutHair" class="box">
         <div>
           <h2 id="remainingCuts">
-            <span>3</span> cortes restantes
+            <!-- <span>3</span> cortes restantes -->
           </h2>
           <div id="progressBar">
             <div>
               <div></div>
               <div></div>
             </div>
-            <p id="summaryCuts">7 de 10</p>
+            <p id="summaryCuts"></p>
           </div>
         </div>
         <div id="gift">
@@ -122,6 +85,18 @@
         </div>
       </section>
     </main>
+
+    <div id="congratulations">
+      <div id="bg"></div>
+      <div id="box">
+        <div id="xButton" class="close"><i class="ph ph-x"></i></div>
+        <h3>
+          <img  src="./assets/PinGift.png" alt="Presente" /> 
+          Parabéns! Seu próximo corte é gratuito!
+        </h3>
+        <button class="close">Ok</button>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>

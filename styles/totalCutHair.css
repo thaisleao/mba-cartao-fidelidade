@@ -37,7 +37,7 @@
 
       div:first-child {
         background-image: var(--gradient-base);
-        width: 100px;
+        width: 1px;
         height: 8px;
         border-radius: 99px;
         display: block;

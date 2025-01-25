@@ -3,6 +3,7 @@
     {
       "id": "124-537-835-230",
       "name": "Natália Miranda",
+      "avatar": "https://avatar.iran.liara.run/public/100?size=56",
       "clientSince": "18/09/2023",
       "appointmentHistory": [
         {"date": "29/04/2024", "time": "18:30"},
@@ -10,7 +11,8 @@
         {"date": "01/02/2024", "time": "17:30"},
         {"date": "03/01/2024", "time": "15:00"},
         {"date": "28/11/2023", "time": "14:00"},
-        {"date": "23/10/2023", "time": "15:00"}
+        {"date": "23/10/2023", "time": "15:00"},
+        {"date": "12/10/2023", "time": "11:00"}
       ],
       "loyaltyCard": {
         "totalCuts": 7,
@@ -21,6 +23,7 @@
     {
       "id": "207-245-699-104",
       "name": "Capitão Nascimento",
+      "avatar": "https://avatar.iran.liara.run/public/26?size=56",
       "clientSince": "12/04/2023",
       "appointmentHistory": [
         {"date": "01/05/2024", "time": "10:00"},
@@ -37,6 +40,7 @@
     {
       "id": "523-114-876-908",
       "name": "Sansão",
+      "avatar": "https://avatar.iran.liara.run/public/37?size=56",
       "clientSince": "15/07/2023",
       "appointmentHistory": [
         {"date": "22/04/2024", "time": "16:00"},
@@ -45,9 +49,32 @@
         {"date": "20/12/2023", "time": "15:15"}
       ],
       "loyaltyCard": {
-        "totalCuts": 5,
-        "cutsNeeded": 8,
-        "cutsRemaining": 3
+        "totalCuts": 4,
+        "cutsNeeded": 10,
+        "cutsRemaining": 6
+      }
+    },
+    {
+      "id": "321-432-543-654",
+      "name": "Fulano de Tal",
+      "avatar": "https://avatar.iran.liara.run/public/99?size=56",
+      "clientSince": "14/01/2020",
+      "appointmentHistory": [
+        {"date": "22/04/2024", "time": "16:00"},
+        {"date": "26/03/2024", "time": "17:45"},
+        {"date": "18/03/2024", "time": "16:30"},
+        {"date": "01/03/2024", "time": "09:45"},
+        {"date": "22/02/2024", "time": "11:30"},
+        {"date": "12/02/2024", "time": "16:00"},
+        {"date": "04/02/2024", "time": "13:45"},
+        {"date": "24/01/2024", "time": "17:45"},
+        {"date": "14/01/2024", "time": "10:15"},
+        {"date": "20/12/2023", "time": "15:15"}
+      ],
+      "loyaltyCard": {
+        "totalCuts": 10,
+        "cutsNeeded": 10,
+        "cutsRemaining": 0
       }
     }
   ]

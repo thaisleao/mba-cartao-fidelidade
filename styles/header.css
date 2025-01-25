@@ -1,6 +1,7 @@
 header {
   justify-content: center;
-  margin-block: 4em;
+  margin: 4em auto;
+  max-width: 400px;
 
   @media (max-width: 768px) {
     margin-top: 2em;
@@ -59,7 +60,12 @@ header {
 
     &:hover {
       background: var(--gray-600);
-    }
-    
+    } 
   }
+}
+#error {
+  color: var(--pink);
+  font: var(--text-xs);
+  padding-left: 1em;
+  visibility: hidden;
 }

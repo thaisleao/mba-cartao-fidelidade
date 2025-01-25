@@ -1,0 +1,79 @@
+#congratulations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+
+  #bg {
+    background: var(--gray-700);
+    opacity: 20%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+  }
+  #box {
+    background: var(--gray-200);
+    padding: 1em 2em;
+    border-radius: 10px;
+    position: relative;
+    max-width: 480px;
+    margin: 30% auto;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    #xButton {
+      display: flex;
+      justify-content: end;
+      i {
+        cursor: pointer;
+        padding: .5em;
+      }
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      font: var(--title-sm);
+      width: 100%;
+
+      img {
+        width: 60px;
+      }
+    }
+
+    button {
+      padding: .2em .5em;
+      background-color: var(--gray-300);
+      border: 2px solid var(--gray-400);
+      border-radius: 5px;
+      cursor: pointer;
+      font: var(--text-sm);
+      color: var(--gray-600);
+
+      &:hover {
+        background-color: var(--gray-400);
+        border: 2px solid var(--gray-500);
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-inline: 1em;
+      padding: 1em;
+
+      h3 {
+        img {
+          width: 40px;
+        }
+        font: var(--subtitle-sm)
+      }
+
+      button {
+        font: var(--text-xs);
+      }
+    }
+  }
+}
